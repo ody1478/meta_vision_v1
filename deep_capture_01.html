@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Capture</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/includeHTML.js"></script>
+</head>
+<body>
+    <header include-html="/layout/header.html"></header>
+    <div class="depth dep01">
+        <div class="inner">
+            <div class="txt_wrap txt_center">
+                <h2 class="title_small">
+                    업로드 파일 분석
+                </h2>
+                <p class="sub_txt">
+                    Deep Capture는 사용자별 제한이 있습니다. 
+                </p>
+            </div>
+            <ul class="deep01_list txt_center">
+                <li>
+                    <div class="img_wrap">
+                        <!-- input image -->
+                        <h3>제한</h3>
+                        <ul>
+                            <li>게정 : Free</li>
+                            <li>길이 : 10초 이하</li>
+                            <li>크기 : 50M 이하</li>
+                            <li>해상도 : 1080 이하</li>
+                            <li>프레임 속도 : 30 fps 이하</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_wrap">
+                        <!-- input image -->
+                        <h3>업로드 파일</h3>
+                        <ul>
+                            <li>파일명 : video.mp4 </li>
+                            <li>길이 : 11.5초 </li>
+                            <li>크기 : 48.4M </li>
+                            <li>해상도 : 1080 </li>
+                            <li>프레임 속도 : 60 fps</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="result">
+                <div class="message">
+                    <p>동영상의 길이가 제한을 초과하였습니다</p>
+                    <p>동영상의 fps가 제한을 초과하였습니다</p>
+                </div>
+                <a href="/deep_capture.html" class="cont_btn_b">
+                    <span>Previous</span>
+                </a>
+                <a href="/deep_capture_list.html" class="cont_btn">
+                    <span>Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer include-html="/layout/footer.html"></footer>
+</body>
+<script>
+    includeHTML()
+</script>
+</html>

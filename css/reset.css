@@ -1,0 +1,197 @@
+/* 공통적인 속성 관련 정의 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+/* 62.5% = 10px = 1rem */
+html, body {font-size: 62.5%;}
+ul {list-style-type: none;}
+a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+.inner {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+/* 폰트 관련 속성 정의 */
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 4.2rem;
+}
+.nav li a {
+    font-size: 2rem;
+    font-weight: 360;
+}
+.nav li a:hover {
+    color: orangered;
+    /* font-size: 2.2rem; */
+    /* font-weight: 500; */
+}
+
+h2.title_big {
+    font-size: 6.2rem;
+    font-weight: 500;
+}
+h2.title_medium {
+    font-size: 5.1rem;
+    font-weight: 500;
+}
+h2.title_small {
+    font-size: 4.1rem;
+}
+p.sub_txt {
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+a.cont_btn {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    background-color: #eee;
+    width: 155px;
+    font-size: 1.6rem;
+    line-height: 3;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: start;
+}
+a.cont_btn::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 4px solid transparent;
+    border-left: 6px solid #000;
+    border-bottom: 4px solid transparent;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.depth {
+    position: relative;
+    padding: 100px 0;
+    /* background-color: #f0f0f0; */
+}
+.txt_center {
+    text-align: center;
+}
+.cont_txt {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #818181;
+}
+
+p.depth_txt {
+    font-size: 2.3rem;
+    font-weight: 200;
+    margin: 40px 0;
+}
+
+h4 {
+    font-size: 4.3rem;
+}
+.list_txt {
+    font-size: 1.7rem;
+    color: #818181;
+}
+h3 {
+    font-size: 3.2rem;
+}
+
+.copyright {
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+/* 이하 추가 */
+
+.head_shadow {
+    box-shadow: 5px 5px #efefef;
+    margin-bottom: 5px;
+}
+
+form {
+    width: 550px;
+    margin: auto;
+}
+form.upload {
+    width: 640px;
+    margin: auto;
+}
+form.upload a {
+    font-size: 16px;
+}
+form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.wide textarea,
+.wide input[type=submit],
+.wide input[type=password],
+.wide input[type=email],
+.wide input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.wide label {
+    width: 100%;
+    /* padding: 12px; */
+    margin: 16px 0px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.wide input[type=submit] {
+    font-size: 2rem;
+    margin-top: 16px;
+    border-radius: 0px;
+    background-color: #d1d1d1;
+}
+.wide input[type=submit]:hover {
+    background-color: #aaa;
+}
+
+a.cont_btn_b {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    background-color: #eee;
+    width: 185px;
+    font-size: 1.6rem;
+    line-height: 3;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: end;
+}
+a.cont_btn_b::before {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 4px solid transparent;
+    border-right: 6px solid #000;
+    border-bottom: 4px solid transparent;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
